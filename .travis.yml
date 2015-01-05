@@ -4,4 +4,6 @@ python:
   - "3.2"
   - "3.4"
 
-script: nosetests
+install: "pip install twisted"
+
+script: starter
