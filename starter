@@ -7,7 +7,7 @@ from AdminBot import *
 import sys
 
 if __name__ == '__main__':
-	log.startLogging(sys.stdout)
-	f = AdminBotMain('fossasia', 'fossasia_channel_admin.log')
-	reactor.connectTCP('irc.freenode.net', 6667, f)
-	reactor.run()
+    log.startLogging(sys.stdout)
+    f = AdminBotMain('fossasia', 'fossasia_channel_admin.log')
+    reactor.connectTCP('irc.freenode.net', 6667, f)
+    reactor.run()
