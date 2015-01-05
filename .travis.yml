@@ -4,5 +4,4 @@ python:
   - "3.2"
   - "3.4"
 
-script: 
-./starter
+script: nosetests
