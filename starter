@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+from twisted.python import log
+from twisted.internet import reactor
+from AdminBot import *
+
+import sys
+
+if __name__ == '__main__':
+	log.startLogging(sys.stdout)
+	f = AdminBotMain('fossasia', 'fossasia_channel_admin.log')
+	reactor.connectTCP('irc.freenode.net', 6667, f)
+	reactor.run()
