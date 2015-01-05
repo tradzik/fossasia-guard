@@ -6,4 +6,4 @@ python:
 
 install: "pip install twisted"
 
-script: starter
+script: "python starter"
