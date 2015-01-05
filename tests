@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+from twisted.python import log
+from twisted.internet import reactor
+from AdminBot import *
+
+import sys
+
+if __name__ == '__main__':
+  log.startLogging(sys.stdout)
+  f = AdminBotMain('fossasia', 'fossasia_channel_admin.log')
+  sys.exit(0)
