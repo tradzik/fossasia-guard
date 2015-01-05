@@ -264,7 +264,8 @@ class AdminBot(irc.IRCClient):
 
         # user send normal message to channel
         self.logger.log("%s: %s" % (user, message))
-        # check does message contain any bad word
+        message = message.lower()
+	# check does message contain any bad word
         if any(t_msg in message for t_msg in self.badWords):
             # ops can use bad words...
             if user not in self.chanOps:
